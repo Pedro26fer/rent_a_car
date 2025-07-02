@@ -49,4 +49,11 @@ export class CarsDTO {
   @IsOptional()
   @IsString({ message: 'A descrição deve ser uma string' })
   description?: string;
+  
+  @IsOptional()
+  @IsString({ message: 'As notas devem ser uma string' })
+  notes?: string;
+
+  
+
 }
