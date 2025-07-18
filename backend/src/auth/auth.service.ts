@@ -13,7 +13,7 @@ export interface JWTPayload {
 }
 
 export interface LoginResponse {
-  accsess_token: string;
+  access_token: string;
   user: {
     id: string;
     name: string;
@@ -58,7 +58,7 @@ export class AuthService {
     };
 
     return {
-      accsess_token: this.jwtService.sign(payload),
+      access_token: this.jwtService.sign(payload),
       user: {
         id: user.id,
         email: user.email,
