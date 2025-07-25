@@ -10,7 +10,7 @@ import {
 } from 'class-validator';
 import { CarStatus } from '../cars.entity';
 
-export class CarsDTO {
+export class CreateCarsDTO {
   @IsString({ message: 'A marca do veículo deve ser uma string' })
   @IsNotEmpty({ message: 'Campo de marca é obrigatório' })
   brand: string;
